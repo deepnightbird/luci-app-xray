@@ -20,7 +20,7 @@ jobs:
         include:
           - arch: linux-arm64
             sdk_url_path: https://mirror-03.infra.openwrt.org/snapshots/targets/mediatek/filogic/
-            sdk_name: -sdk-mediatek-filogic-
+            sdk_name: openwrt-sdk-mediatek-filogic_gcc-13.3.0_musl.Linux-x86_64.tar.zst
 
     env:
       SDK_URL_PATH: ${{ matrix.sdk_url_path }}
