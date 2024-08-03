@@ -18,9 +18,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - arch: x86_64
-            sdk_url_path: https://downloads.openwrt.org/snapshots/targets/x86/64
-            sdk_name: -sdk-x86-64_
+          - arch: linux-arm64
+            sdk_url_path: https://mirror-03.infra.openwrt.org/snapshots/targets/mediatek/filogic/
+            sdk_name: -sdk-mediatek-filogic-
 
     env:
       SDK_URL_PATH: ${{ matrix.sdk_url_path }}
